@@ -1,0 +1,11 @@
+--- a/board/mscc/sparx5/sparx5.env
++++ b/board/mscc/sparx5/sparx5.env
+@@ -114,5 +114,7 @@
+ nor_only=env set mtdparts mtdparts=${nor_parts}; env set bootcmd run nor_boot; env save
+ 
+ ubupdate=sf probe; sf update ${fileaddr} 0 ${filesize}
+ 
+-ramboot=run setup; bootm ${loadaddr}#${pcb}
++ramboot=run setup; bootm ${loadaddr}
++
++bootcmd=run nor_boot
