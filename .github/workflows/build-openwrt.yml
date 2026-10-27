@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 355
     steps:
       - name: Checkout overlay repo
@@ -58,6 +58,7 @@ jobs:
           CONFIG_TARGET_microchipsw_sparx5_DEVICE_cti_xdg205=y
           CONFIG_TARGET_ROOTFS_INITRAMFS=y
           CONFIG_DEVEL=y
+          CONFIG_BUILD_LOG=y
           CONFIG_CCACHE=y
           EOF
           make defconfig
