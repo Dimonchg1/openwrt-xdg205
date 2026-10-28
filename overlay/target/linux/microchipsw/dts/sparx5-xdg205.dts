@@ -126,12 +126,12 @@
 			microchip,bandwidth = <10000>;
 			phys = <&serdes 25>;
 			phy-mode = "10gbase-r";
+			openwrt,netdev-name = "lan1";
 			fixed-link {
 				speed = <10000>;
 				full-duplex;
 				pause;
 			};
-			openwrt,netdev-name = "lan1";
 		};
 
 		port57: port@57 {
@@ -139,12 +139,12 @@
 			microchip,bandwidth = <10000>;
 			phys = <&serdes 26>;
 			phy-mode = "10gbase-r";
+			openwrt,netdev-name = "lan2";
 			fixed-link {
 				speed = <10000>;
 				full-duplex;
 				pause;
 			};
-			openwrt,netdev-name = "lan2";
 		};
 
 		port58: port@58 {
@@ -152,12 +152,12 @@
 			microchip,bandwidth = <10000>;
 			phys = <&serdes 27>;
 			phy-mode = "10gbase-r";
+			openwrt,netdev-name = "lan3";
 			fixed-link {
 				speed = <10000>;
 				full-duplex;
 				pause;
 			};
-			openwrt,netdev-name = "lan3";
 		};
 
 		port59: port@59 {
@@ -165,12 +165,12 @@
 			microchip,bandwidth = <10000>;
 			phys = <&serdes 28>;
 			phy-mode = "10gbase-r";
+			openwrt,netdev-name = "lan4";
 			fixed-link {
 				speed = <10000>;
 				full-duplex;
 				pause;
 			};
-			openwrt,netdev-name = "lan4";
 		};
 
 		port60: port@60 {
@@ -178,12 +178,12 @@
 			microchip,bandwidth = <10000>;
 			phys = <&serdes 29>;
 			phy-mode = "10gbase-r";
+			openwrt,netdev-name = "lan5";
 			fixed-link {
 				speed = <10000>;
 				full-duplex;
 				pause;
 			};
-			openwrt,netdev-name = "lan5";
 		};
 
 		port61: port@61 {
@@ -191,12 +191,12 @@
 			microchip,bandwidth = <10000>;
 			phys = <&serdes 30>;
 			phy-mode = "10gbase-r";
+			openwrt,netdev-name = "lan6";
 			fixed-link {
 				speed = <10000>;
 				full-duplex;
 				pause;
 			};
-			openwrt,netdev-name = "lan6";
 		};
 
 		port62: port@62 {
@@ -204,12 +204,12 @@
 			microchip,bandwidth = <10000>;
 			phys = <&serdes 31>;
 			phy-mode = "10gbase-r";
+			openwrt,netdev-name = "lan7";
 			fixed-link {
 				speed = <10000>;
 				full-duplex;
 				pause;
 			};
-			openwrt,netdev-name = "lan7";
 		};
 
 		/* Management port, serdes 0 SGMII as on PCB134/PCB135. */
