@@ -5,7 +5,7 @@ define Build/sparx5-uboot
 endef
 
 define Build/sparx5-initramfs-fit
-	cat $(BIN_DIR)/$$(KERNEL_INITRAMFS_IMAGE) >> $@
+	cat $(BIN_DIR)/$(KERNEL_INITRAMFS_IMAGE) >> $@
 endef
 
 define Device/cti_xdg205
